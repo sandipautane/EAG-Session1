@@ -35,3 +35,7 @@ Currently, TimeScape is meant to be installed as an unpacked extension from this
 - `background.js`: Background script responsible for tracking active tabs, URLs, and idle states.
 - `popup.html` / `popup.js` / `popup.css`: The UI and logic for the extension's popup that displays the stats.
 - `icons/`: Directory containing the extension icons (`16x16`, `48x48`, `128x128`).
+
+## 📝 Youtube Video Link
+
+https://youtu.be/E-DB0cj21Ak
