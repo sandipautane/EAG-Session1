@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TimeScape Stats</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="logo">
+        <svg fill="currentColor" viewBox="0 0 24 24" class="logo-icon"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>
+        <h1>TimeScape</h1>
+      </div>
+      <div class="date-display" id="date-display">Today</div>
+    </header>
+
+    <div class="summary-card glassmorphism">
+      <div class="summary-label">Total Browsing Time</div>
+      <div class="summary-time" id="total-time">0h 0m</div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="total-progress"></div>
+      </div>
+    </div>
+
+    <div class="list-header">
+      <h2 class="section-title">Top Sites</h2>
+      <button class="clear-btn" id="clear-btn" title="Clear Data">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+      </button>
+    </div>
+
+    <ul class="site-list" id="site-list">
+      <!-- Generated via JS -->
+      <div class="loading">Loading your stats...</div>
+    </ul>
+    
+    <footer class="footer">
+      <p>Stay mindful of your digital time</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
